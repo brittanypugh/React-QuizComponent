@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 let quizData = require('./quiz_data.json');
 
-const Quiz extends React.Component { //Quiz component class version
+class Quiz extends React.Component { //Quiz component class version
     constructor(props){
         super(props);
         this.state = {
@@ -11,8 +11,9 @@ const Quiz extends React.Component { //Quiz component class version
     }
     render() {
         return (
-        <div><div className="QuizQuestion"></div></div>
-        );
+        <div><div className="QuizQuestion">{quizData.quiz_questions[0].instruction_text}</div></div>
+        )
+    }
 }
 
 // function Quiz(){ //Quiz component function version
