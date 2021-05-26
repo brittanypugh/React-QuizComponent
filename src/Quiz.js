@@ -3,7 +3,7 @@ import QuizQuestion from './QuizQuestion.js'
 
 let quizData = require('./quiz_data.json');
 
-class Quiz extends React.Component { //Quiz component class version
+class Quiz extends Component { //Quiz component class version
     constructor(props){
         super(props);
         this.state = {
